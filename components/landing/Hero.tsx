@@ -33,31 +33,31 @@ const KB: { keywords: string[]; answer: string }[] = [
   },
   {
     keywords: ["voice", "sound", "tone", "my voice", "answer in my voice", "own words", "style"],
-    answer: "PersonaOn doesn't generate a synthetic voice — it learns your actual phrasing, vocabulary, and communication patterns from your real meetings and writing. When someone queries your memory, responses come back in language that reflects how you actually speak, not a template."
+    answer: "PersonaOn doesn't generate a synthetic voice, it learns your actual phrasing, vocabulary, and communication patterns from your real meetings and writing. When someone queries your memory, responses come back in language that reflects how you actually speak, not a template."
   },
   {
     keywords: ["note", "notes", "note app", "notion", "obsidian", "docs", "evernote", "different from notes"],
-    answer: "Note apps store text you manually write. PersonaOn captures context you'd never have time to write down — who said what, what was promised, what was left open, and how it all connects across every meeting. Six months later you can ask 'what did Hemanth need before Q3?' and get a precise answer. No notes app can do that."
+    answer: "Note apps store text you manually write. PersonaOn captures context you'd never have time to write down, who said what, what was promised, what was left open, and how it all connects across every meeting. Six months later you can ask 'what did Hemanth need before Q3?' and get a precise answer. No notes app can do that."
   },
   {
     keywords: ["summarizer", "summary", "otter", "fireflies", "fathom", "recap", "transcript", "transcription", "different from"],
-    answer: "Summarizers give you a recap of one meeting and then forget it. PersonaOn compounds across meetings — it links commitments, tracks follow-through, and builds a searchable layer of your entire working relationship with a person or project. It's the difference between a filing cabinet and a working memory."
+    answer: "Summarizers give you a recap of one meeting and then forget it. PersonaOn compounds across meetings, it links commitments, tracks follow-through, and builds a searchable layer of your entire working relationship with a person or project. It's the difference between a filing cabinet and a working memory."
   },
   {
     keywords: ["capture", "captured", "captures", "what does it capture", "automatic", "automatically", "what gets saved", "stored", "indexed"],
-    answer: "PersonaOn automatically captures decisions, commitments, blockers, next steps, objections, deadlines, client preferences, hiring requirements, investor concerns, and relationship context — all indexed silently while you focus on the conversation. Nothing needs to be manually tagged."
+    answer: "PersonaOn automatically captures decisions, commitments, blockers, next steps, objections, deadlines, client preferences, hiring requirements, investor concerns, and relationship context, all indexed silently while you focus on the conversation. Nothing needs to be manually tagged."
   },
   {
     keywords: ["how does it work", "how it works", "how does personaon work", "explain", "what is personaon", "what is it"],
-    answer: "PersonaOn joins your meetings silently as an observer — on Zoom, Google Meet, or Teams. It listens, transcribes, and extracts structured context: who promised what, what was left open, what changed. After the call, everything is indexed and searchable. You can query it in plain language anytime."
+    answer: "PersonaOn joins your meetings silently as an observer, on Zoom, Google Meet, or Teams. It listens, transcribes, and extracts structured context: who promised what, what was left open, what changed. After the call, everything is indexed and searchable. You can query it in plain language anytime."
   },
   {
     keywords: ["join", "auto join", "auto-join", "joins automatically", "how does it join", "calendar", "meeting invite"],
-    answer: "PersonaOn connects to your Google or Outlook calendar. When a meeting starts, it auto-joins as a silent observer — no manual recording needed, no button to press. It just runs."
+    answer: "PersonaOn connects to your Google or Outlook calendar. When a meeting starts, it auto-joins as a silent observer, no manual recording needed, no button to press. It just runs."
   },
   {
     keywords: ["search", "query", "ask", "find", "recall", "look up", "retrieve", "remember", "memory"],
-    answer: "After your meetings, you can query your memory in plain language — like 'What did we promise the Acme team?' or 'What was Lauren's objection last month?' PersonaOn finds the exact context from your actual conversations, not a summary."
+    answer: "After your meetings, you can query your memory in plain language, like 'What did we promise the Acme team?' or 'What was Lauren's objection last month?' PersonaOn finds the exact context from your actual conversations, not a summary."
   },
   {
     keywords: ["founder", "founders", "startup", "ceo", "early stage", "investor meeting", "pitch"],
@@ -65,19 +65,19 @@ const KB: { keywords: string[]; answer: string }[] = [
   },
   {
     keywords: ["sales", "account manager", "ae", "account executive", "client", "deal", "crm", "renewal"],
-    answer: "Sales teams use PersonaOn to remember the personal context that wins deals — a client's dog's name, a competitor objection from three calls ago, a pricing concession you offered last quarter. It's relationship intelligence that no CRM captures automatically."
+    answer: "Sales teams use PersonaOn to remember the personal context that wins deals, a client's dog's name, a competitor objection from three calls ago, a pricing concession you offered last quarter. It's relationship intelligence that no CRM captures automatically."
   },
   {
     keywords: ["recruiter", "recruiting", "hiring", "candidate", "interview", "compensation", "offer"],
-    answer: "Recruiters use PersonaOn to track candidate expectations, compensation discussions, interview feedback, and hiring manager alignment — all without manual data entry. Every conversation is indexed and searchable across the entire hiring pipeline."
+    answer: "Recruiters use PersonaOn to track candidate expectations, compensation discussions, interview feedback, and hiring manager alignment, all without manual data entry. Every conversation is indexed and searchable across the entire hiring pipeline."
   },
   {
     keywords: ["consultant", "consulting", "client work", "stakeholder", "deliverable", "report"],
-    answer: "Consultants use PersonaOn to capture the exact vocabulary and framing clients use in discovery calls — so deliverables are written in the client's own language, not paraphrased. It cuts report-writing time significantly."
+    answer: "Consultants use PersonaOn to capture the exact vocabulary and framing clients use in discovery calls, so deliverables are written in the client's own language, not paraphrased. It cuts report-writing time significantly."
   },
   {
     keywords: ["manager", "executive", "1:1", "one on one", "team", "direct report", "promise", "commitment"],
-    answer: "Managers use PersonaOn to never lose track of what they promised their teams — review conversations, design sign-offs, career goals. It creates an audit trail of commitments that builds trust over time."
+    answer: "Managers use PersonaOn to never lose track of what they promised their teams, review conversations, design sign-offs, career goals. It creates an audit trail of commitments that builds trust over time."
   },
   {
     keywords: ["investor", "investing", "portfolio", "due diligence", "mrr", "valuation", "pitch"],
@@ -85,15 +85,15 @@ const KB: { keywords: string[]; answer: string }[] = [
   },
   {
     keywords: ["price", "pricing", "cost", "free", "plan", "subscription", "paid"],
-    answer: "PersonaOn offers a free plan that covers the core capture and memory loop. Paid plans unlock deeper cross-meeting intelligence, team sharing, and advanced query features. You can start free — no credit card needed."
+    answer: "PersonaOn offers a free plan that covers the core capture and memory loop. Paid plans unlock deeper cross-meeting intelligence, team sharing, and advanced query features. You can start free, no credit card needed."
   },
   {
     keywords: ["privacy", "secure", "security", "data", "gdpr", "my data", "stored", "who sees"],
-    answer: "Your meeting data is encrypted and stored privately — only you can query your memory vault. PersonaOn never uses your conversations to train shared models or exposes your data to other users."
+    answer: "Your meeting data is encrypted and stored privately, only you can query your memory vault. PersonaOn never uses your conversations to train shared models or exposes your data to other users."
   },
   {
     keywords: ["zoom", "meet", "teams", "google meet", "microsoft teams", "platform", "works with", "integrate"],
-    answer: "PersonaOn works with Zoom, Google Meet, and Microsoft Teams today. It joins via calendar link — no plugins required on any participant's side."
+    answer: "PersonaOn works with Zoom, Google Meet, and Microsoft Teams today. It joins via calendar link, no plugins required on any participant's side."
   },
   {
     keywords: ["compound", "compounding", "over time", "gets better", "learn", "improve", "smarter"],
@@ -101,7 +101,7 @@ const KB: { keywords: string[]; answer: string }[] = [
   },
   {
     keywords: ["start", "get started", "sign up", "try", "begin", "onboard", "how do i start"],
-    answer: "Getting started takes about two minutes — connect your Google or Outlook calendar, and PersonaOn will automatically join your next meeting. No setup for other participants. No manual recording. It just runs."
+    answer: "Getting started takes about two minutes, connect your Google or Outlook calendar, and PersonaOn will automatically join your next meeting. No setup for other participants. No manual recording. It just runs."
   }
 ];
 
@@ -121,7 +121,7 @@ function getAnswer(input: string, lastAiText: string): string {
 
   // 3. Thanks / positive
   if (/^(thanks|thank you|thx|cool|great|awesome|nice|got it|ok|okay)$/.test(q)) {
-    return "Glad that helps! Anything else you'd like to know — how it works, who it's for, or how to get started?";
+    return "Glad that helps! Anything else you'd like to know, how it works, who it's for, or how to get started?";
   }
 
   // 4. Score each KB entry by keyword matches
@@ -156,7 +156,7 @@ function getAnswer(input: string, lastAiText: string): string {
 
   // 6. Context-aware follow-up: if last AI message was a clarification
   if (lastAiText.toLowerCase().includes("clarify")) {
-    return `Got it — let me try to help. PersonaOn is a work memory layer that captures everything said in your meetings — commitments, blockers, decisions, follow-ups — and makes it queryable in plain language. What aspect were you curious about?`;
+    return `Got it, let me try to help. PersonaOn is a work memory layer that captures everything said in your meetings, commitments, blockers, decisions, follow-ups, and makes it queryable in plain language. What aspect were you curious about?`;
   }
 
   // 7. True fallback
@@ -190,7 +190,7 @@ export default function Hero() {
     {
       id: "greeting",
       role: "ai",
-      text: "Hi — I'm a live PersonaOn demo. Ask me anything about how work memory works, what makes it different, or how to start capturing your meetings."
+      text: "Hi, I'm a live PersonaOn demo. Ask me anything about how work memory works, what makes it different, or how to start capturing your meetings."
     }
   ]);
   const [isThinking, setIsThinking] = useState(false);
@@ -779,7 +779,7 @@ export default function Hero() {
                   onKeyDown={handleKey}
                   onFocus={() => setIsInputFocused(true)}
                   onBlur={() => setIsInputFocused(false)}
-                  placeholder="Ask anything — in your own words"
+                  placeholder="Ask anything, in your own words"
                   disabled={isThinking}
                   style={{
                     flex: 1,
@@ -1382,7 +1382,7 @@ export default function Hero() {
                     onKeyDown={handleKey}
                     onFocus={() => setIsInputFocused(true)}
                     onBlur={() => setIsInputFocused(false)}
-                    placeholder="Ask anything — in your own words"
+                    placeholder="Ask anything, in your own words"
                     disabled={isThinking}
                     style={{
                       flex: 1,

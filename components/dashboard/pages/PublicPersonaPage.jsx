@@ -14,7 +14,7 @@ const enter = (i) => ({
 export default function PublicPersonaPage({ setModal }) {
   return (
     <div className="page">
-      {/* WHY: One primary task — see exactly what a visitor sees. The rotating preview is the hero, calm and centered. */}
+      {/* WHY: One primary task, see exactly what a visitor sees. The rotating preview is the hero, calm and centered. */}
       <motion.section className="section" {...enter(0)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -28,7 +28,7 @@ export default function PublicPersonaPage({ setModal }) {
         <RotatingPreview />
       </motion.section>
 
-      {/* WHY: Progressive disclosure — what visitors can actually do, grouped as simple toggles instead of scattered controls. */}
+      {/* WHY: Progressive disclosure, what visitors can actually do, grouped as simple toggles instead of scattered controls. */}
       <motion.section className="section" {...enter(1)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -63,7 +63,7 @@ export default function PublicPersonaPage({ setModal }) {
         </div>
       </motion.section>
 
-      {/* WHY: Single share surface — bookable slots live here so visitors can act; share action stays at the top only (no duplicate). */}
+      {/* WHY: Single share surface, bookable slots live here so visitors can act; share action stays at the top only (no duplicate). */}
       <motion.section className="section" {...enter(2)}>
         <div className="section-head">
           <div className="section-head-text">

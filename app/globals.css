@@ -13,7 +13,7 @@
   --royal: #312e81;
   --shadow: 0 4px 16px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.04);
 
-  /* Shared type scale — compact, tier-1 product density (Granola/Linear-style).
+  /* Shared type scale - compact, tier-1 product density (Granola/Linear-style).
      One display step; everything else lives in the 13–28px band. */
   --text-display: clamp(28px, 3vw, 40px);
   --text-h1: clamp(22px, 2vw, 28px);
@@ -591,7 +591,7 @@ input:focus-visible {
   color: #16a34a;
 }
 
-/* Live indicator — pulsing dot */
+/* Live indicator - pulsing dot */
 .live-indicator {
   display: inline-flex;
   align-items: center;
@@ -2022,7 +2022,7 @@ input:focus-visible {
 }
 
 /* ============================================================
-   APP SHELL — small enhancements (nav pip, build tab indicator)
+   APP SHELL - small enhancements (nav pip, build tab indicator)
    ============================================================ */
 
 .nav-pip {
@@ -2397,7 +2397,7 @@ input:focus-visible {
 .hero-meta span { display: inline-flex; align-items: center; gap: 6px; }
 .hero-meta svg { color: #34d399; }
 
-/* HERO STAGE — 3D floating cards */
+/* HERO STAGE - 3D floating cards */
 .hero-stage {
   position: relative;
   min-height: 540px;
@@ -3593,7 +3593,7 @@ input:focus-visible {
 }
 
 /* ============================================================
-   PROFESSIONAL LIGHT REFINEMENT — palette, type, no looping anims
+   PROFESSIONAL LIGHT REFINEMENT - palette, type, no looping anims
    Founder & creator-first: refined indigo + warm amber, serif display.
    ============================================================ */
 
@@ -3631,7 +3631,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Display family for headlines — Fraunces variable */
+/* Display family for headlines - Fraunces variable */
 .hero-headline,
 .section-heading,
 .cta-headline,
@@ -3695,7 +3695,7 @@ body {
   font-weight: 700;
 }
 
-/* ===== LANDING — flipped to refined light ===== */
+/* ===== LANDING - flipped to refined light ===== */
 
 .landing {
   color: var(--ink);
@@ -4270,10 +4270,10 @@ body {
   margin-bottom: 12px;
 }
 
-/* Brand-strip — single row, breathing room */
+/* Brand-strip - single row, breathing room */
 .brand-strip-wrap { padding: 48px 0 24px; }
 
-/* Hero — slightly smaller, less wall-of-text feel */
+/* Hero - slightly smaller, less wall-of-text feel */
 .hero {
   padding: 120px 32px 64px;
   gap: 56px;
@@ -4336,7 +4336,7 @@ body {
 .phone-screen .avatar.large { color: #fff; }
 .phone-screen .avatar.large svg { color: #fff; }
 
-/* Hero sub em — refined italic flourish */
+/* Hero sub em - refined italic flourish */
 .hero-sub em {
   font-family: var(--font-display-stack);
   font-style: italic;
@@ -4348,7 +4348,7 @@ body {
 /* Tighter section sub */
 .section-sub { max-width: 560px; font-size: 16px; }
 
-/* Final CTA — tighter */
+/* Final CTA - tighter */
 .cta-headline { max-width: 18ch; margin-inline: auto; }
 
 /* ===== Guided demo: start prompt + tour overlay ===== */
@@ -4702,7 +4702,7 @@ body:has(.demo-overlay) .sidebar .nav-item.active {
 }
 
 /* ============================================================
-   BLUE + WHITE — full palette swap. All indigo/amber/emerald/pink
+   BLUE + WHITE - full palette swap. All indigo/amber/emerald/pink
    collapses to a single blue scale + cool neutrals.
    ============================================================ */
 
@@ -4734,14 +4734,14 @@ body {
   color: var(--ink);
 }
 
-/* Aurora — blue only */
+/* Aurora - blue only */
 .landing { background: var(--paper); }
 .landing .aurora { opacity: 0.32; }
 .landing .aurora-blob.a1 { background: radial-gradient(circle, rgba(37, 99, 235, 0.22) 0%, transparent 60%); }
 .landing .aurora-blob.a2 { background: radial-gradient(circle, rgba(96, 165, 250, 0.22) 0%, transparent 60%); }
 .landing .aurora-blob.a3 { background: radial-gradient(circle, rgba(29, 78, 216, 0.16) 0%, transparent 60%); }
 
-/* Scroll bar — single blue gradient */
+/* Scroll bar - single blue gradient */
 .scroll-bar {
   background: linear-gradient(90deg, #1e3a8a, #2563eb 50%, #60a5fa);
   box-shadow: 0 0 12px rgba(37, 99, 235, 0.3);
@@ -4836,7 +4836,7 @@ body {
 .avatar.large,
 .t-foot .avatar { color: #ffffff; }
 
-/* Tour popup — black theme (overrides the landing blue forced above) */
+/* Tour popup - black theme (overrides the landing blue forced above) */
 .demo-prompt h3 { color: #ffffff !important; }
 .demo-prompt-eyebrow {
   background: rgba(255, 255, 255, 0.08) !important;
@@ -4861,7 +4861,7 @@ body {
   opacity: 0.4;
 }
 
-/* Pillar icons — single blue scale */
+/* Pillar icons - single blue scale */
 .pillar-icon,
 .pa-violet .pillar-icon,
 .pa-cyan .pillar-icon,
@@ -4900,7 +4900,7 @@ body {
   color: var(--ink);
 }
 
-/* Knowledge/Memory graph dots — blue scale only */
+/* Knowledge/Memory graph dots - blue scale only */
 .orb-mini .dot { background: #3b82f6; box-shadow: 0 0 10px rgba(59, 130, 246, 0.35); }
 .orb-mini .dot.center {
   background: linear-gradient(135deg, #1e3a8a, #3b82f6);
@@ -4923,7 +4923,7 @@ body {
 .orb-lines { stroke: rgba(11, 30, 59, 0.18); }
 .node { color: var(--ink); }
 
-/* "Live" pill, lead-spark, mv-foot — were green, become blue */
+/* "Live" pill, lead-spark, mv-foot - were green, become blue */
 .hc-pill,
 .lead-spark,
 .mv-foot,
@@ -4958,7 +4958,7 @@ body {
 .hero-card.hc-stat svg { color: var(--brand); }
 .hero-card.hc-stat span { color: var(--muted); }
 
-/* CTA blob — calm blue swirl */
+/* CTA blob - calm blue swirl */
 .cta-blob {
   background:
     conic-gradient(from 0deg, rgba(37, 99, 235, 0.32), rgba(96, 165, 250, 0.22), rgba(219, 234, 254, 0.20), rgba(37, 99, 235, 0.32));
@@ -4993,7 +4993,7 @@ body {
     radial-gradient(circle at 70% 70%, rgba(96, 165, 250, 0.14), transparent 50%);
 }
 
-/* Pricing flag — blue, not amber */
+/* Pricing flag - blue, not amber */
 .pricing-flag {
   background: linear-gradient(120deg, #93c5fd, #2563eb);
   color: #ffffff;
@@ -5013,7 +5013,7 @@ body {
   color: var(--brand) !important;
 }
 
-/* Sidebar (dashboard) — re-tinted to blue */
+/* Sidebar (dashboard) - re-tinted to blue */
 .sidebar-card-kicker,
 .nav-section-label,
 .nav-subitems button:hover,
@@ -5047,7 +5047,7 @@ body {
 .feature-map-card span { color: var(--brand); background: var(--brand-tint); }
 .chip-row span { color: var(--brand-deep); background: var(--brand-tint); }
 
-/* Phone screen — keep dark but use blue glow */
+/* Phone screen - keep dark but use blue glow */
 .mv-phone {
   background: linear-gradient(160deg, #0f1e3f, #06091a);
   box-shadow: 0 28px 60px rgba(11, 30, 59, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.06);
@@ -5095,7 +5095,7 @@ body {
 .voice-wave i { background: linear-gradient(180deg, #2563eb, #60a5fa); }
 .voice-wave { background: rgba(37, 99, 235, 0.07); }
 
-/* Chat bubbles — readable on light section surfaces */
+/* Chat bubbles - readable on light section surfaces */
 .bubble.visitor { background: #2f7fc4; color: #ffffff; }
 .bubble.aria { background: #f5f5f7; color: #111111; }
 .bubble.aria small { color: var(--muted); }
@@ -5523,7 +5523,7 @@ body {
 }
 
 /* ============================================================
-   HOME — modern dashboard (refined cards + depth)
+   HOME - modern dashboard (refined cards + depth)
    Reference feel: Vercel · Stripe · Linear dashboards
    ============================================================ */
 .home {
@@ -5574,7 +5574,7 @@ body {
 .chip-green { background: rgba(22, 163, 74, 0.13); color: #16a34a; }
 .chip-amber { background: rgba(217, 119, 6, 0.13); color: #d97706; }
 
-/* 1 — Persona status (hero card) */
+/* 1 - Persona status (hero card) */
 .status-card {
   padding: 24px 26px;
   display: flex;
@@ -5765,7 +5765,7 @@ body {
   font-weight: 500;
 }
 
-/* 2 — Quick actions (tiles) */
+/* 2 - Quick actions (tiles) */
 .action-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -5802,7 +5802,7 @@ body {
   color: var(--muted);
 }
 
-/* 3 — Key metrics (cards) */
+/* 3 - Key metrics (cards) */
 .kpi-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -5850,7 +5850,7 @@ body {
   background: linear-gradient(90deg, #4a8fcf, #2f7fc4);
 }
 
-/* 4 + 5 — Tasks & Activity columns */
+/* 4 + 5 - Tasks & Activity columns */
 .home-columns {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
@@ -5934,7 +5934,7 @@ body {
 }
 
 /* ============================================================
-   PAGE KIT — section-first system
+   PAGE KIT - section-first system
    ChatGPT focus · Granola calm · Linear hierarchy · Notion structure
    Principle: prefer SECTIONS over cards; whitespace groups content;
    cards only where a surface genuinely justifies itself.
@@ -6069,7 +6069,7 @@ body {
 .ui-badge--neutral { background: var(--secondary); color: var(--muted); }
 .ui-badge--red { background: rgba(220, 38, 38, 0.1); color: #dc2626; }
 
-/* Persona — knowledge source toolbar */
+/* Persona - knowledge source toolbar */
 .source-types {
   display: flex;
   flex-wrap: wrap;
@@ -6276,3 +6276,58 @@ body {
 .app-footer-links a { color: var(--muted); font-weight: 500; }
 .app-footer-links a:hover { color: var(--ink); }
 .app-footer-meta { margin-left: auto; font-size: 12px; }
+
+/* Meetings page: content-priority hierarchy */
+.page-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.meeting-list {
+  display: flex;
+  flex-direction: column;
+}
+.meeting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+}
+.meeting-row + .meeting-row {
+  border-top: 1px solid var(--line);
+}
+.meeting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.meeting-title {
+  font-size: 15.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.meeting-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
+.meeting-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+.meeting-join {
+  border: none;
+  background: rgba(47, 127, 196, 0.1);
+  color: #2f7fc4;
+  padding: 7px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+.meeting-join:hover {
+  background: rgba(47, 127, 196, 0.18);
+}

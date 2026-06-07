@@ -28,7 +28,7 @@ export default function BlogPost() {
               marginBottom: "32px",
               textAlign: "center"
             }}>
-              Your Expertise Is Worth Millions — So Why Does It Disappear When You Log Off?
+              Your Expertise Is Worth Millions, So Why Does It Disappear When You Log Off?
             </h1>
 
             {/* Author Block */}
@@ -112,7 +112,7 @@ export default function BlogPost() {
               }}>
                 H
               </span>
-              ave you ever lost a client you never knew you had? Have you ever poured years into building real knowledge — and watched it go completely silent the moment you stepped away from your desk? Have you ever wondered why the most valuable thing about you can't show up for you when you're not in the room? I have. And for a long time, I didn't even know I had a problem.
+              ave you ever lost a client you never knew you had? Have you ever poured years into building real knowledge, and watched it go completely silent the moment you stepped away from your desk? Have you ever wondered why the most valuable thing about you can't show up for you when you're not in the room? I have. And for a long time, I didn't even know I had a problem.
             </p>
 
             <p style={{ marginBottom: "36px" }}>

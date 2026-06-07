@@ -1,170 +1,109 @@
 import {
   Activity,
-  ArrowUpRight,
-  Brain,
+  Globe2,
   HelpCircle,
-  Hexagon,
   LayoutDashboard,
-  MessageCircle,
-  Mic,
   PanelRight,
   Settings,
   Shield,
-  Star,
-  User,
+  Sparkles,
   Users,
-  Wand2,
+  Video,
   Workflow
 } from "lucide-react";
 
 export const DEMO_STORAGE_KEY = "personaon_demo_seen_v1";
 
+// Guided tour: walks every page and subpage, explaining what each one is for.
 export const demoSteps = [
   {
     page: "Home",
     section: "Home",
     icon: LayoutDashboard,
-    title: "Home — your work memory at a glance",
-    body: "Mission control for everything PersonaOn remembers. See readiness, recent activity, and what to act on next.",
+    title: "Home, your mission control",
+    body: "Your daily starting point. See how ready your persona is, what needs attention, and what to do next, all in one place.",
     features: [
-      "Memory readiness score",
-      "Recent meetings & decisions",
-      "Open follow-ups",
-      "Suggested next actions"
+      "Persona readiness at a glance",
+      "Quick actions for common tasks",
+      "Tasks waiting on you",
+      "Recent activity from your twin"
     ]
   },
   {
     page: "Persona",
-    section: "Persona · Profile",
-    buildTab: "Profile",
-    icon: User,
-    title: "Persona · Profile — who you are",
-    body: "Your name, role, organization, and bio anchor every memory. PersonaOn uses this to attribute decisions and follow-ups to the right person.",
+    section: "Persona",
+    icon: Sparkles,
+    title: "Persona, where you train your twin",
+    body: "Feed your twin what it needs to sound like you. Add knowledge, fill gaps in the Studio, test answers in Chat, and clone your Voice.",
     features: [
-      "Persona name, role, organization",
-      "Bio & headline for context",
-      "Social links",
-      "Completeness checklist"
-    ]
-  },
-  {
-    page: "Persona",
-    section: "Persona · Knowledge",
-    buildTab: "Knowledge",
-    icon: Brain,
-    title: "Persona · Knowledge — sources of truth",
-    body: "Upload docs, link your website or LinkedIn, drop in podcasts or YouTube. PersonaOn chunks, scores, and citation-pins everything.",
-    features: [
-      "LinkedIn · Resume · Files · URL · RSS",
-      "Per-source health & quality",
-      "Knowledge graph preview",
-      "Extracted-fact cloud"
-    ]
-  },
-  {
-    page: "Persona",
-    section: "Persona · Studio",
-    buildTab: "Studio",
-    icon: Wand2,
-    title: "Persona · Studio — fill the gaps",
-    body: "Interview-style prompts surface what's missing. Promote strong answers to verified, fix weak ones inline.",
-    features: [
-      "Interview-prompt queue",
-      "Saved answer library",
-      "Knowledge gaps highlighted",
-      "Persona quality score"
-    ]
-  },
-  {
-    page: "Persona",
-    section: "Persona · Voice",
-    buildTab: "Voice",
-    icon: Mic,
-    title: "Persona · Voice — optional clone",
-    body: "Record 90 seconds, accept consent, and PersonaOn can read recall answers back to you (or to your audience) in your voice.",
-    features: [
-      "90-second sample recording",
-      "Consent & usage controls",
-      "Voice preview generation",
-      "TTS toggle for public chat"
-    ]
-  },
-  {
-    page: "Persona",
-    section: "Persona · Chat",
-    buildTab: "Chat",
-    icon: MessageCircle,
-    title: "Persona · Chat — recall in your own words",
-    body: "Ask your work memory anything. Every answer points back to the exact moment in the call where it was said.",
-    features: [
-      "Natural-language search across calls",
-      "Citation drawer with timestamps",
-      "Queued visitor questions",
-      "Voice & text input · streaming"
+      "Knowledge: connect sources and documents",
+      "Studio: answer prompts to fill gaps",
+      "Chat: test cited answers live",
+      "Voice: record an optional voice clone"
     ]
   },
   {
     page: "Meetings",
     section: "Meetings",
-    icon: Hexagon,
-    title: "Meetings — every call, captured",
-    body: "Auto-joined meetings with speaker labels. Decisions and follow-ups extracted as soon as the call ends.",
+    icon: Video,
+    title: "Meetings, every call captured",
+    body: "Bookings, live transcripts, and summaries in one view. Watch a call as it happens and review outcomes after.",
     features: [
-      "Bookings inbox & calendar status",
-      "Live transcript & twin attendance",
-      "Per-meeting summaries",
-      "Weekly Friday digest"
+      "Bookings inbox to approve requests",
+      "Live capture with transcript",
+      "Per-meeting outcomes and action items",
+      "Weekly digest of what was decided"
     ]
   },
   {
     page: "Publish",
     section: "Publish",
-    icon: ArrowUpRight,
-    title: "Publish — where memory shows up",
-    body: "Turn pieces of your memory into shareable surfaces with fine-grained toggles. Three distribution points covered next.",
+    icon: Globe2,
+    title: "Publish, your profile and distribution",
+    body: "Set up your public profile and decide where it appears. The Profile tab edits your details; Distribution controls links, embeds, and sharing.",
     features: [
-      "Public memory page (toggle by trait)",
-      "Embed widget for your site",
-      "Share studio · QR · signature",
-      "Booking button"
+      "Profile: name, headline, role, and bio",
+      "Distribution: public page and widget",
+      "Share links, QR, and visibility toggles",
+      "Completeness checklist"
     ]
   },
   {
     page: "Marketplace",
-    section: "Publish · Marketplace",
+    section: "Publish, Marketplace",
     icon: Users,
-    title: "Publish · Marketplace — discovery surface",
-    body: "Opt-in directory where founders, advisors, and creators can be found by topic or geography. Optional revenue source.",
+    title: "Marketplace, get discovered",
+    body: "An opt-in directory where founders, advisors, and creators can be found by topic or geography. Visitors can try your twin before reaching out.",
     features: [
-      "Topic, geo, and category filters",
+      "Topic and category filters",
       "Verified twin badges",
-      "Sample-Q&A previews",
+      "Sample question previews",
       "Try-before-commit chat"
     ]
   },
   {
     page: "Public Persona Page",
-    section: "Publish · Public page",
-    icon: Star,
-    title: "Publish · Public page — your handle",
-    body: "personaon.ai/p/your-handle — visitor-facing profile with chat, voice, booking, and share controls.",
+    section: "Publish, Public page",
+    icon: Globe2,
+    title: "Public page, your shareable profile",
+    body: "The visitor-facing page at your handle. People can chat with your twin, hear it in your voice, and book time with you.",
     features: [
-      "Chat panel with citations",
-      "Voice toggle & mic input",
-      "Booking button (optional)",
-      "Share modal · QR · social"
+      "Live preview of the visitor view",
+      "Chat and voice toggles",
+      "Optional booking button",
+      "Share modal with QR and social"
     ]
   },
   {
     page: "Embedded Widget",
-    section: "Publish · Widget",
+    section: "Publish, Widget",
     icon: PanelRight,
-    title: "Publish · Widget — embed on any site",
-    body: "Drop a one-line embed. Configure colors, position, welcome message, lead capture — all without code.",
+    title: "Widget, embed on any site",
+    body: "Drop a one-line embed onto your website. Configure colors, position, welcome message, and lead capture without code.",
     features: [
       "Allowed domains list",
-      "Bubble color & position",
-      "Welcome & lead-capture prompts",
+      "Bubble color and position",
+      "Welcome and lead-capture prompts",
       "Public key with revocation"
     ]
   },
@@ -172,64 +111,64 @@ export const demoSteps = [
     page: "Automations",
     section: "Automations",
     icon: Workflow,
-    title: "Automations — memory in motion",
-    body: "Push decisions to Slack, follow-ups to Linear, account context to your CRM. Memory flows where the work happens.",
+    title: "Automations, memory in motion",
+    body: "Push decisions to Slack, follow-ups to your tracker, and context to your CRM. Set rules once and let them run.",
     features: [
-      "Triggers · actions · approval flows",
-      "Slack · Gmail · Linear · Salesforce",
-      "Action inbox & run history",
-      "API keys · webhooks · domain limits"
+      "Triggers, actions, and approvals",
+      "Slack, Gmail, and CRM connectors",
+      "Action inbox and run history",
+      "API keys and webhooks"
     ]
   },
   {
     page: "Insights",
     section: "Insights",
     icon: Activity,
-    title: "Insights — your memory pulse",
-    body: "How much you're remembering, how often it gets recalled, and where the leverage is.",
+    title: "Insights, your memory pulse",
+    body: "See how much you are remembering, how often it gets recalled, and where to add memory next.",
     features: [
-      "Conversations & engagement charts",
+      "Conversation and engagement trends",
       "Top visitor questions",
-      "Widget lead intent ranking",
-      "Answerability & quality score"
+      "Lead quality and intent",
+      "Answerability and quality score"
     ]
   },
   {
     page: "Admin Preview",
-    section: "Insights · Admin",
+    section: "Insights, Admin",
     icon: Shield,
-    title: "Insights · Admin Preview — for ops teams",
-    body: "Internal operations view: monitoring, audits, graph tooling, and safety controls. Useful for teams running PersonaOn for many users.",
+    title: "Admin Preview, for ops teams",
+    body: "An internal operations view for teams running PersonaOn across many users: monitoring, audits, and safety controls.",
     features: [
       "Twin health monitoring",
-      "Audit log & change history",
+      "Audit log and change history",
       "Knowledge graph tooling",
-      "Safety / consent checks"
+      "Safety and consent checks"
     ]
   },
   {
     page: "Settings",
     section: "Settings",
     icon: Settings,
-    title: "Settings — account & privacy",
-    body: "Account, billing, retention, exports, and destructive controls — the boring-but-critical stuff.",
+    title: "Settings, account and privacy",
+    body: "Manage your account, billing, notifications, privacy, and data exports. The important but quiet controls live here.",
     features: [
-      "Account & billing · usage meters",
-      "Notifications & digests",
-      "Privacy, consent, exports",
-      "Reset / delete twin or account"
+      "Account and billing",
+      "Notification preferences",
+      "Privacy, consent, and exports",
+      "Reset or delete your twin"
     ]
   },
   {
     page: "Help & Legal",
-    section: "Settings · Help & Legal",
+    section: "Settings, Help & Legal",
     icon: HelpCircle,
-    title: "Settings · Help & Legal — answers & policies",
-    body: "Help center, contact, policy library, and consent management. One place for everything compliance-related.",
+    title: "Help and Legal, answers and policies",
+    body: "Find quickstart guides, contact support, and read the policies. One place for everything compliance related.",
     features: [
-      "Help articles & quickstart",
-      "Terms · Privacy · Consent",
-      "Compliance & data residency",
+      "Help articles and quickstart",
+      "Terms, Privacy, and Consent",
+      "Compliance and data residency",
       "Contact support"
     ]
   }
@@ -237,9 +176,9 @@ export const demoSteps = [
 
 export const featureDistribution = {
   Home: [
-    ["Command center", ["Landing page", "Active persona overview", "Persona status card", "Persona quality/readiness score", "Knowledge readiness", "Public link shortcut"]],
+    ["Command center", ["Landing page", "Active persona overview", "Persona status card", "Persona quality and readiness score", "Knowledge readiness", "Public link shortcut"]],
     ["Operating pulse", ["Recent activity", "Recent chats", "Recent leads", "Recent meetings", "Calendar status preview"]],
-    ["Access and onboarding", ["User signup", "Login", "Password reset", "Invitation acceptance flow", "Onboarding flow", "LinkedIn/manual persona creation"]],
-    ["Next actions", ["Quick actions", "Re-enrich persona button", "Persona switcher", "Trial/plan notice", "Suggested next actions", "Persona lifecycle management"]]
+    ["Access and onboarding", ["User signup", "Login", "Password reset", "Invitation acceptance flow", "Onboarding flow", "LinkedIn or manual persona creation"]],
+    ["Next actions", ["Quick actions", "Re-enrich persona button", "Persona switcher", "Trial or plan notice", "Suggested next actions", "Persona lifecycle management"]]
   ]
 };

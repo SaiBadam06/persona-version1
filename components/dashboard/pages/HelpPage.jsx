@@ -17,7 +17,7 @@ export default function HelpPage() {
 
   return (
     <div className="page">
-      {/* WHY: Quickstart topics lead — the primary task is "find an answer fast," so scannable help links come first as a grid. */}
+      {/* WHY: Quickstart topics lead, the primary task is "find an answer fast," so scannable help links come first as a grid. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}
@@ -42,7 +42,7 @@ export default function HelpPage() {
         </div>
       </motion.section>
 
-      {/* WHY: Policies are a simple reference list — low-frequency but trust-critical, kept calm and out of the way. */}
+      {/* WHY: Policies are a simple reference list, low-frequency but trust-critical, kept calm and out of the way. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}
@@ -65,7 +65,7 @@ export default function HelpPage() {
         </div>
       </motion.section>
 
-      {/* WHY: Contact support is the final escape hatch — one clear path when self-serve answers fall short. */}
+      {/* WHY: Contact support is the final escape hatch, one clear path when self-serve answers fall short. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}

@@ -15,7 +15,7 @@ const enter = (i) => ({
 export default function ChatPage({ setModal, showToast }) {
   return (
     <div className="page">
-      {/* WHY: ChatGPT-style — the conversation IS the screen. Full-width transcript and composer, minimal chrome, one primary task: test the persona. */}
+      {/* WHY: ChatGPT-style, the conversation IS the screen. Full-width transcript and composer, minimal chrome, one primary task: test the persona. */}
       <motion.section className="section" {...enter(0)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -36,7 +36,7 @@ export default function ChatPage({ setModal, showToast }) {
         </div>
       </motion.section>
 
-      {/* WHY: Citations are a small side note, not a panel — they support the answer without competing with the chat. */}
+      {/* WHY: Citations are a small side note, not a panel, they support the answer without competing with the chat. */}
       <motion.section className="section" {...enter(1)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -54,7 +54,7 @@ export default function ChatPage({ setModal, showToast }) {
         </div>
       </motion.section>
 
-      {/* WHY: Queued visitor questions become next test prompts — a single list keeps the test loop tight (no duplicate action panels). */}
+      {/* WHY: Queued visitor questions become next test prompts, a single list keeps the test loop tight (no duplicate action panels). */}
       <motion.section className="section" {...enter(2)}>
         <div className="section-head">
           <div className="section-head-text">

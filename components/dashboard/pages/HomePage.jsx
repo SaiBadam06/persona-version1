@@ -39,7 +39,7 @@ export default function HomePage({ setPage, setModal }) {
 
   return (
     <div className="home">
-      {/* 1 — Persona status */}
+      {/* 1, Persona status */}
       <motion.section
         className="status-card"
         initial={{ opacity: 0, y: 12 }}
@@ -59,7 +59,7 @@ export default function HomePage({ setPage, setModal }) {
               <span className="status-role">{persona.role}</span>
               <div className="status-cta">
                 <button className="btn-primary" onClick={() => setPage("Persona")}>
-                  Continue — test answers <ArrowRight size={15} />
+                  Continue, test answers <ArrowRight size={15} />
                 </button>
                 <button className="btn-quiet" onClick={() => setPage("Public Persona Page")}>
                   View public page
@@ -77,7 +77,7 @@ export default function HomePage({ setPage, setModal }) {
         </div>
       </motion.section>
 
-      {/* 2 — Quick actions */}
+      {/* 2, Quick actions */}
       <section className="home-block">
         <h2 className="home-label">Quick actions</h2>
         <div className="action-grid">
@@ -95,7 +95,7 @@ export default function HomePage({ setPage, setModal }) {
         </div>
       </section>
 
-      {/* 3 — Key metrics */}
+      {/* 3, Key metrics */}
       <section className="home-block">
         <h2 className="home-label">Overview</h2>
         <div className="kpi-grid">
@@ -116,7 +116,7 @@ export default function HomePage({ setPage, setModal }) {
         </div>
       </section>
 
-      {/* 4 + 5 — Tasks & Activity, side by side */}
+      {/* 4 + 5, Tasks & Activity, side by side */}
       <div className="home-columns">
         <section className="list-card">
           <h2 className="home-label">Tasks</h2>

@@ -26,8 +26,7 @@ export default function DemoStartPrompt({ onAccept, onDecline }) {
         <span className="demo-prompt-eyebrow">Guided tour · 60 seconds</span>
         <h3>Want a quick tour of PersonaOn?</h3>
         <p>
-          We&apos;ll walk you through every page and show you exactly what your work memory can do —
-          one screen at a time.
+          We&apos;ll walk you through every page and show you exactly what your work memory can do, one screen at a time.
         </p>
         <div className="demo-prompt-actions">
           <button className="primary" onClick={onAccept}>

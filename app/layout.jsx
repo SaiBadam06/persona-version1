@@ -16,7 +16,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata = {
-  title: "PersonaOn — More than meeting notes. Your work memory.",
+  title: "PersonaOn, More than meeting notes. Your work memory.",
   description: "PersonaOn joins your calls and turns every decision, follow-up, and detail into a searchable work memory you can recall in seconds."
 };
 

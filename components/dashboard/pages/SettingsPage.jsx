@@ -8,7 +8,7 @@ export default function SettingsPage({ setModal, showToast }) {
   const ease = [0.22, 1, 0.36, 1];
   return (
     <div className="page">
-      {/* WHY: Account & billing is the primary task — identity + plan editing live together so the user sets up "who they are" in one place. */}
+      {/* WHY: Account & billing is the primary task, identity + plan editing live together so the user sets up "who they are" in one place. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}
@@ -40,7 +40,7 @@ export default function SettingsPage({ setModal, showToast }) {
         </div>
       </motion.section>
 
-      {/* WHY: Notifications grouped as one calm toggle surface — no per-row buttons, just clear on/off control. */}
+      {/* WHY: Notifications grouped as one calm toggle surface, no per-row buttons, just clear on/off control. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}
@@ -76,7 +76,7 @@ export default function SettingsPage({ setModal, showToast }) {
         />
       </motion.section>
 
-      {/* WHY: Danger zone is a distinct destructive surface — three non-duplicate, irreversible actions kept apart from everyday settings. */}
+      {/* WHY: Danger zone is a distinct destructive surface, three non-duplicate, irreversible actions kept apart from everyday settings. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}

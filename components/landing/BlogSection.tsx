@@ -35,8 +35,8 @@ export default function BlogSection() {
       pill: "STRATEGY",
       pillBg: "#FFF7ED",
       pillColor: "#C2410C", // terracotta orange accent
-      title: "Your Expertise Is Worth Millions — So Why Does It Disappear When You Log Off?",
-      excerpt: "Have you ever lost a client you never knew you had? Have you ever poured years into building real knowledge — and watched it go completely silent the moment you stepped away from your desk? Build a work memory.",
+      title: "Your Expertise Is Worth Millions, So Why Does It Disappear When You Log Off?",
+      excerpt: "Have you ever lost a client you never knew you had? Have you ever poured years into building real knowledge, and watched it go completely silent the moment you stepped away from your desk? Build a work memory.",
       author: "Lauren Sinclair",
       role: "Lead Product Strategy Analyst",
       image: "/zoe.png", // reusing avatar image for Lauren

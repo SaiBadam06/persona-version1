@@ -9,7 +9,6 @@ import {
   PanelRight,
   Settings,
   Sparkles,
-  Star,
   Upload,
   Users,
   Video,
@@ -29,7 +28,7 @@ export const nav = [
 export const allScreens = [
   ...nav,
   ["Marketplace", Users],
-  ["Public Persona Page", Star],
+  ["Public Persona Page", Globe2],
   ["Embedded Widget", PanelRight],
   ["Admin Preview", LayoutDashboard],
   ["Help & Legal", HelpCircle]
@@ -81,9 +80,9 @@ export function pageFromPathname(pathname) {
 }
 
 export const subtitles = {
-  Home: "Mission control — readiness, activity, leads, meetings, and what to do next.",
+  Home: "Mission control, readiness, activity, leads, meetings, and what to do next.",
   Persona: "Profile, knowledge, studio Q&A, chat testing, and voice cloning.",
-  Chat: "Recall in your own words — every answer cited to the moment it was said.",
+  Chat: "Recall in your own words, every answer cited to the moment it was said.",
   Meetings: "Bookings, live transcripts, summaries, twin attendance, weekly digest.",
   Publish: "Public page, marketplace, widget embed, share links, QR, visibility controls.",
   Automations: "Actions, triggers, connectors, approvals, execution history, API keys.",
@@ -91,7 +90,7 @@ export const subtitles = {
   Settings: "Account, billing, usage, privacy, exports, consent.",
   Marketplace: "Opt-in discovery directory by topic, geography, and category.",
   "Public Persona Page": "Your visitor-facing profile with chat, voice, booking, and share.",
-  "Embedded Widget": "Drop-in embed for any site — colors, position, lead capture.",
+  "Embedded Widget": "Drop-in embed for any site, colors, position, lead capture.",
   "Admin Preview": "Internal operations view: monitoring, audits, graph tooling, safety.",
   "Help & Legal": "Help center, contact, policy library, and consent management."
 };

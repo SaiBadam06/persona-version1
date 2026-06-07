@@ -31,12 +31,12 @@ export default function PersonaPage({ setPage, setModal, showToast, buildTabOver
 
       {tab === "Knowledge" && (
         <>
-          {/* WHY: Sources are the persona's raw material — adding & monitoring them is the primary task of this tab. */}
+          {/* WHY: Sources are the persona's raw material, adding & monitoring them is the primary task of this tab. */}
           <motion.section className="section" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease }}>
             <div className="section-head">
               <div className="section-head-text">
                 <h2>Knowledge sources</h2>
-                <span className="why">What your persona learns from — health and coverage at a glance</span>
+                <span className="why">What your persona learns from, health and coverage at a glance</span>
               </div>
               <button className="section-action" onClick={() => setModal("Add knowledge source")}>Add source</button>
             </div>
@@ -59,7 +59,7 @@ export default function PersonaPage({ setPage, setModal, showToast, buildTabOver
             </div>
           </motion.section>
 
-          {/* WHY: Extraction preview proves the sources worked — these are concepts the persona can now speak to. */}
+          {/* WHY: Extraction preview proves the sources worked, these are concepts the persona can now speak to. */}
           <motion.section className="section" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease, delay: 0.06 }}>
             <div className="section-head">
               <div className="section-head-text">
@@ -74,7 +74,7 @@ export default function PersonaPage({ setPage, setModal, showToast, buildTabOver
 
       {tab === "Studio" && (
         <>
-          {/* WHY: The interview studio fills knowledge gaps — answering prompts is the one job here. */}
+          {/* WHY: The interview studio fills knowledge gaps, answering prompts is the one job here. */}
           <motion.section className="section" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease }}>
             <div className="section-head">
               <div className="section-head-text">
@@ -106,7 +106,7 @@ export default function PersonaPage({ setPage, setModal, showToast, buildTabOver
 
       {tab === "Voice" && (
         <>
-          {/* WHY: Voice cloning is optional — one setup flow, gated by consent. */}
+          {/* WHY: Voice cloning is optional, one setup flow, gated by consent. */}
           <motion.section className="section" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease }}>
             <div className="section-head">
               <div className="section-head-text">

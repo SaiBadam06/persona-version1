@@ -14,7 +14,7 @@ const enter = (i) => ({
 export default function AdminPage() {
   return (
     <div className="page">
-      {/* WHY: Ops at a glance — KPI tiles give the platform health snapshot first, strong scannable hierarchy. */}
+      {/* WHY: Ops at a glance, KPI tiles give the platform health snapshot first, strong scannable hierarchy. */}
       <motion.section className="section" {...enter(0)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -39,7 +39,7 @@ export default function AdminPage() {
         </div>
       </motion.section>
 
-      {/* WHY: Audit log is the operator's core read — a dense table of recent accounts replaces a vague "recent users" panel. */}
+      {/* WHY: Audit log is the operator's core read, a dense table of recent accounts replaces a vague "recent users" panel. */}
       <motion.section className="section" {...enter(1)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -56,7 +56,7 @@ export default function AdminPage() {
         />
       </motion.section>
 
-      {/* WHY: Safety & consent checks are actionable items, not metrics — grouped as one queue so nothing slips. */}
+      {/* WHY: Safety & consent checks are actionable items, not metrics, grouped as one queue so nothing slips. */}
       <motion.section className="section" {...enter(2)}>
         <div className="section-head">
           <div className="section-head-text">

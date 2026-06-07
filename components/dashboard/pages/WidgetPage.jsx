@@ -14,7 +14,7 @@ const enter = (i) => ({
 export default function WidgetPage() {
   return (
     <div className="page">
-      {/* WHY: Primary task — get the widget onto a site. Snippet + public key are the only things needed to embed, shown first. */}
+      {/* WHY: Primary task, get the widget onto a site. Snippet + public key are the only things needed to embed, shown first. */}
       <motion.section className="section" {...enter(0)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -38,7 +38,7 @@ export default function WidgetPage() {
         </div>
       </motion.section>
 
-      {/* WHY: Appearance is the single configuration surface — one FormGrid groups every visible setting (Notion-style logical grouping). */}
+      {/* WHY: Appearance is the single configuration surface, one FormGrid groups every visible setting (Notion-style logical grouping). */}
       <motion.section className="section" {...enter(1)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -57,7 +57,7 @@ export default function WidgetPage() {
         />
       </motion.section>
 
-      {/* WHY: Progressive disclosure — a calm live preview confirms the config without adding controls; advanced kept minimal. */}
+      {/* WHY: Progressive disclosure, a calm live preview confirms the config without adding controls; advanced kept minimal. */}
       <motion.section className="section" {...enter(2)}>
         <div className="section-head">
           <div className="section-head-text">

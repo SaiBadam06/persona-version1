@@ -9,7 +9,7 @@ export default function PricingSection() {
     free: {
       title: "FREE",
       price: "$0",
-      desc: "Forever — no card needed",
+      desc: "Forever, no card needed",
       features: [
         "500 conversations / month",
         "Public profile page",
@@ -232,8 +232,7 @@ export default function PricingSection() {
                 </button>
                 {plan.isPopular && (
                   <div style={{ textAlign: "center", marginTop: "12px", fontSize: "0.78rem", color: "var(--text-dark-muted)" }}>
-                    Or try 7 days, no card needed —
-                  </div>
+                    Or try 7 days, no card needed, </div>
                 )}
               </div>
 

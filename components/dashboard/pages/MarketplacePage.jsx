@@ -16,7 +16,7 @@ export default function MarketplacePage({ setPage }) {
 
   return (
     <div className="page">
-      {/* WHY: Search + filters lead the page — discovery is the one primary task, so the entry point sits first and minimal. */}
+      {/* WHY: Search + filters lead the page, discovery is the one primary task, so the entry point sits first and minimal. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}
@@ -42,7 +42,7 @@ export default function MarketplacePage({ setPage }) {
         </div>
       </motion.section>
 
-      {/* WHY: Results are a clean grid-3 of comparable entries — same name/role/topic shape + a single Chat action, no card clutter. */}
+      {/* WHY: Results are a clean grid-3 of comparable entries, same name/role/topic shape + a single Chat action, no card clutter. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}
@@ -76,7 +76,7 @@ export default function MarketplacePage({ setPage }) {
         </div>
       </motion.section>
 
-      {/* WHY: A single CTA section invites supply-side creators — one clear next step, no competing buttons. */}
+      {/* WHY: A single CTA section invites supply-side creators, one clear next step, no competing buttons. */}
       <motion.section
         className="section"
         initial={{ opacity: 0, y: 12 }}

@@ -30,7 +30,7 @@ export const pillars = [
     icon: Mic,
     tag: "Capture",
     title: "Joins every meeting, automatically.",
-    body: "Native to Zoom, Meet, and Teams. Records, transcribes, and structures — no bot to invite.",
+    body: "Native to Zoom, Meet, and Teams. Records, transcribes, and structures, no bot to invite.",
     accent: "violet"
   },
   {
@@ -59,28 +59,28 @@ export const pillars = [
 export const moduleShowcase = [
   {
     name: "Capture",
-    kicker: "01 — Capture",
+    kicker: "01, Capture",
     title: "Show up. We'll handle the writing down.",
     body: "Auto-join your calls, transcribe with speaker labels, and pull out decisions and follow-ups in the background.",
     points: ["Zoom · Meet · Teams native", "Speaker-labeled transcripts", "Decisions & follow-ups detected", "No bot to invite manually"]
   },
   {
     name: "Organize",
-    kicker: "02 — Organize",
+    kicker: "02, Organize",
     title: "One memory, sorted three ways.",
-    body: "Every meeting filed by project, by person, and by decision — so context for the next conversation is already waiting.",
+    body: "Every meeting filed by project, by person, and by decision, so context for the next conversation is already waiting.",
     points: ["Per-project timeline", "Per-person dossier", "Decision log with sources", "Follow-up board with due dates"]
   },
   {
     name: "Recall",
-    kicker: "03 — Recall",
+    kicker: "03, Recall",
     title: "Ask. Get the answer with receipts.",
     body: "Natural-language search across everything ever said. Citations link straight to the moment in the call.",
     points: ["\"What did we promise Acme?\"", "\"What's open with Maya?\"", "\"When did we decide on pricing?\"", "Every answer timestamped"]
   },
   {
     name: "Connect",
-    kicker: "04 — Connect",
+    kicker: "04, Connect",
     title: "Plays nicely with the rest of your stack.",
     body: "Push decisions to Slack, follow-ups to Linear, context to your CRM. Memory flows to where work happens.",
     points: ["Slack & Gmail digests", "Linear, Notion, Asana follow-ups", "Salesforce & HubSpot context", "Calendar-aware prep"]
@@ -98,18 +98,18 @@ export const useCases = [
   {
     tag: "Founders",
     title: "Stop rebuilding decisions every Monday.",
-    body: "What the team agreed on Friday is still here on Monday — sourced and ready to act on.",
+    body: "What the team agreed on Friday is still here on Monday, sourced and ready to act on.",
     icon: Rocket
   },
   {
     tag: "Consultants & Advisors",
     title: "Every client's context, instantly recallable.",
-    body: "Walk into the next call already remembering the last six — without re-reading a single note.",
+    body: "Walk into the next call already remembering the last six, without re-reading a single note.",
     icon: Compass
   },
   {
     tag: "Sales & Account Managers",
-    title: "Know what was promised — before the renewal.",
+    title: "Know what was promised, before the renewal.",
     body: "Every commitment, objection, and stakeholder mood logged against the account. No surprise churn.",
     icon: TrendingUp
   },
@@ -122,7 +122,7 @@ export const useCases = [
   {
     tag: "Recruiters",
     title: "Every candidate's signal, in one place.",
-    body: "Screens, panel debriefs, hiring-manager calls — stitched per candidate, instantly recallable.",
+    body: "Screens, panel debriefs, hiring-manager calls, stitched per candidate, instantly recallable.",
     icon: Users
   },
   {
@@ -135,7 +135,7 @@ export const useCases = [
 
 export const testimonials = [
   {
-    quote: "I stopped re-reading transcripts. I ask PersonaOn 'what did we agree on pricing?' — and it tells me, with the exact moment cited.",
+    quote: "I stopped re-reading transcripts. I ask PersonaOn 'what did we agree on pricing?', and it tells me, with the exact moment cited.",
     name: "Maya Chen",
     role: "Growth Lead, Northstar"
   },

@@ -14,7 +14,7 @@ const enter = (delay) => ({
 export default function InsightsPage() {
   return (
     <div className="page">
-      {/* WHY: Key metrics — the single answer to "is the memory performing?" lives in these headline numbers. */}
+      {/* WHY: Key metrics, the single answer to "is the memory performing?" lives in these headline numbers. */}
       <motion.section className="section" {...enter(0)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -45,7 +45,7 @@ export default function InsightsPage() {
         </div>
       </motion.section>
 
-      {/* WHY: Engagement chart — metrics need a trend; this shows whether conversation volume is rising or falling. */}
+      {/* WHY: Engagement chart, metrics need a trend; this shows whether conversation volume is rising or falling. */}
       <motion.section className="section" {...enter(0.05)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -58,18 +58,18 @@ export default function InsightsPage() {
         </div>
       </motion.section>
 
-      {/* WHY: Top questions — shows what visitors actually ask, the highest-leverage signal for what memory to improve. */}
+      {/* WHY: Top questions, shows what visitors actually ask, the highest-leverage signal for what memory to improve. */}
       <motion.section className="section" {...enter(0.1)}>
         <div className="section-head">
           <div className="section-head-text">
             <h2>Top visitor questions</h2>
-            <span className="why">What people ask the twin most — where to add memory next</span>
+            <span className="why">What people ask the twin most, where to add memory next</span>
           </div>
         </div>
         <ActionList items={persona.questions.concat(["What is your advisory process?", "Do you work with pre-seed teams?"])} />
       </motion.section>
 
-      {/* WHY: Leads & quality — closes the performance picture: who converted and where answers still fall short. */}
+      {/* WHY: Leads & quality, closes the performance picture: who converted and where answers still fall short. */}
       <motion.section className="section" {...enter(0.15)}>
         <div className="section-head">
           <div className="section-head-text">

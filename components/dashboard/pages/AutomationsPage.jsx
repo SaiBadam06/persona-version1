@@ -13,7 +13,7 @@ const enter = (delay) => ({
 export default function AutomationsPage({ setModal, showToast }) {
   return (
     <div className="page">
-      {/* WHY: Coverage at a glance — before touching anything, show how much is automated and where it reaches. */}
+      {/* WHY: Coverage at a glance, before touching anything, show how much is automated and where it reaches. */}
       <motion.section className="section" {...enter(0)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -43,7 +43,7 @@ export default function AutomationsPage({ setModal, showToast }) {
         </div>
       </motion.section>
 
-      {/* WHY: Active automations — the core management task: see and create the rules the persona runs unattended. */}
+      {/* WHY: Active automations, the core management task: see and create the rules the persona runs unattended. */}
       <motion.section className="section" {...enter(0.05)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -64,7 +64,7 @@ export default function AutomationsPage({ setModal, showToast }) {
         />
       </motion.section>
 
-      {/* WHY: Action inbox — automations need human approval; this is where pending runs are reviewed and confirmed. */}
+      {/* WHY: Action inbox, automations need human approval; this is where pending runs are reviewed and confirmed. */}
       <motion.section className="section" {...enter(0.1)}>
         <div className="section-head">
           <div className="section-head-text">
@@ -86,7 +86,7 @@ export default function AutomationsPage({ setModal, showToast }) {
         </div>
       </motion.section>
 
-      {/* WHY: Connectors & keys — automations only run if integrations and credentials are healthy, grouped for quick audit. */}
+      {/* WHY: Connectors & keys, automations only run if integrations and credentials are healthy, grouped for quick audit. */}
       <motion.section className="section" {...enter(0.15)}>
         <div className="section-head">
           <div className="section-head-text">
