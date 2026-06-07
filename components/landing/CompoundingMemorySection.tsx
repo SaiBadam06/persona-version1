@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import CursorInteractiveDots from "./CursorInteractiveDots";
 
 export default function CompoundingMemorySection() {
   const [activeStep, setActiveStep] = useState(3); // default to Month 6
@@ -103,13 +102,11 @@ export default function CompoundingMemorySection() {
       style={{ 
         position: "relative",
         overflow: "hidden",
-        background: "#0a1024", 
+        background: "#0a0a0a", 
         color: "#ffffff", 
         padding: "120px 0" 
       }}
     >
-      {/* Interactive particle field */}
-      <CursorInteractiveDots />
       {/* Ambient drifting blooms */}
       <div className="ambient-glow ambient-blue animate-drift-1" style={{ top: "10%", left: "5%", width: "500px", height: "500px" }} />
       <div className="ambient-glow ambient-purple animate-drift-2" style={{ bottom: "10%", right: "5%", width: "500px", height: "500px" }} />

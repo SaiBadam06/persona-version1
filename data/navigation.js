@@ -1,8 +1,8 @@
 import {
   Activity,
   ArrowUpRight,
+  Calendar,
   HelpCircle,
-  Hexagon,
   LayoutDashboard,
   MessageCircle,
   Mic,
@@ -18,7 +18,7 @@ import {
 export const nav = [
   ["Home", LayoutDashboard],
   ["Persona", Sparkles],
-  ["Meetings", Hexagon],
+  ["Meetings", Calendar],
   ["Publish", ArrowUpRight],
   ["Automations", Workflow],
   ["Insights", Activity],

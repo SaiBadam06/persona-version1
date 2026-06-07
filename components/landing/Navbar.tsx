@@ -7,9 +7,11 @@ import Logo from "./Logo";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Why now", href: "#why-now" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Pricing", href: "#pricing" },
+  { label: "Use Cases", href: "/use-cases" },
+  { label: "Enterprise", href: "/enterprise" },
+  { label: "Pricing", href: "/pricing" },
+  { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 export default function Navbar() {
@@ -34,7 +36,7 @@ export default function Navbar() {
       {/* Top Banner */}
       <div 
         style={{
-          background: "#1e3a8a",
+          background: "#111111",
           color: "#ffffff",
           textAlign: "center",
           padding: "10px 20px",
@@ -43,8 +45,8 @@ export default function Navbar() {
         }}
       >
         <span style={{ color: "#a0a0a0" }}>PersonaOn is now free.</span>{" "}
-        <a href="/home?tour=1" style={{ color: "#ffffff", fontWeight: 600, textDecoration: "none" }}>
-          Take the tour &rsaquo;
+        <a href="#" style={{ color: "#ffffff", fontWeight: 600, textDecoration: "none" }}>
+          Create yours &rsaquo;
         </a>
       </div>
 
@@ -103,13 +105,13 @@ export default function Navbar() {
           {/* CTA Links (Hidden on mobile) */}
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }} className="desktop-only">
             <a
-              href="/home"
+              href="#"
               style={{
                 padding: "8px 20px",
                 borderRadius: "12px",
                 border: "1px solid rgba(9, 9, 11, 0.08)",
                 background: "#ffffff",
-                color: "#2563eb",
+                color: "#09090b",
                 fontSize: "0.85rem", 
                 fontWeight: 700, 
                 textDecoration: "none",
@@ -136,11 +138,11 @@ export default function Navbar() {
               Log In
             </a>
             <a 
-              href="/home" 
+              href="#" 
               style={{ 
                 padding: "8px 20px", 
                 borderRadius: "12px", 
-                background: "#2563eb", 
+                background: "#09090b", 
                 color: "#ffffff", 
                 fontSize: "0.85rem", 
                 fontWeight: 700, 
@@ -160,7 +162,7 @@ export default function Navbar() {
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.08)";
-                e.currentTarget.style.background = "#2563eb";
+                e.currentTarget.style.background = "#09090b";
               }}
             >
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
@@ -259,7 +261,7 @@ export default function Navbar() {
             <hr style={{ border: 0, borderTop: "1px solid var(--border-light)" }} />
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               <a
-                href="/home"
+                href="#"
                 onClick={() => setMenuOpen(false)}
                 style={{
                   display: "flex",
@@ -271,7 +273,7 @@ export default function Navbar() {
                   borderRadius: "12px",
                   border: "1px solid rgba(9, 9, 11, 0.08)",
                   background: "#ffffff",
-                  color: "#2563eb",
+                  color: "#09090b",
                   fontSize: "0.95rem",
                   fontWeight: 700,
                   textDecoration: "none",
@@ -286,7 +288,7 @@ export default function Navbar() {
                 Log In
               </a>
               <a 
-                href="/home" 
+                href="#" 
                 onClick={() => setMenuOpen(false)} 
                 style={{ 
                   display: "flex",
@@ -296,7 +298,7 @@ export default function Navbar() {
                   padding: "12px 20px", 
                   width: "100%",
                   borderRadius: "12px",
-                  background: "#2563eb",
+                  background: "#09090b",
                   color: "#ffffff",
                   fontSize: "0.95rem",
                   fontWeight: 700,

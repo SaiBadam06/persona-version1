@@ -288,10 +288,10 @@ export default function Hero() {
         <div style={{ maxWidth: "800px", margin: "0 auto", marginBottom: "60px" }}>
           <h1
             style={{
-              fontSize: "clamp(2.1rem, 4.2vw, 3.2rem)",
+              fontSize: "clamp(3rem, 6vw, 4.5rem)",
               lineHeight: 1.1,
               fontWeight: 800,
-              letterSpacing: "-0.03em",
+              letterSpacing: "-0.04em",
               color: "var(--text-dark)",
               marginBottom: "16px"
             }}
@@ -302,17 +302,16 @@ export default function Hero() {
           <p style={{ color: "var(--text-dark-muted)", fontSize: "1.1rem", maxWidth: "600px", margin: "0 auto 32px auto", lineHeight: "1.6" }}>
             Meetings are where work happens, but important context gets lost after calls. We capture, organize, and remember the details so you don't have to.
           </p>
-          <div className="hero-buttons" style={{ display: "flex", gap: "14px", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
-            <a href="/home" className="btn-black" style={{ padding: "13px 26px", borderRadius: "30px", fontSize: "0.95rem", fontWeight: 600 }}>
+          <div className="hero-buttons" style={{ display: "flex", gap: "16px", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
+            <button className="btn-black" style={{ padding: "14px 28px", borderRadius: "30px", fontSize: "1rem", fontWeight: 600 }}>
               Get Started
-            </a>
-            <a
-              href="/home?tour=1"
-              className="btn-outline"
-              style={{
-                padding: "13px 26px",
-                borderRadius: "30px",
-                fontSize: "0.95rem",
+            </button>
+            <button 
+              className="btn-outline" 
+              style={{ 
+                padding: "14px 28px", 
+                borderRadius: "30px", 
+                fontSize: "1rem", 
                 fontWeight: 600,
                 display: "inline-flex",
                 alignItems: "center",
@@ -320,11 +319,32 @@ export default function Hero() {
                 cursor: "pointer"
               }}
             >
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="6 4 20 12 6 20 6 4" />
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="3" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="3" y="13" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="13" width="8" height="8" rx="1"></rect>
               </svg>
-              Take the tour
-            </a>
+              Download for Windows
+            </button>
+            <button
+              className="btn-outline"
+              style={{
+                padding: "14px 28px",
+                borderRadius: "30px",
+                fontSize: "1rem",
+                fontWeight: 600,
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                cursor: "pointer"
+              }}
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.81-2.323-4.62-2.323-7.28 0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.45z" />
+              </svg>
+              Download for Mac
+            </button>
           </div>
         </div>
 
@@ -372,7 +392,7 @@ export default function Hero() {
                   width: "52px",
                   height: "52px",
                   borderRadius: "50%",
-                  background: "radial-gradient(circle at top left, #27272a 0%, #2563eb 100%)",
+                  background: "radial-gradient(circle at top left, #27272a 0%, #09090b 100%)",
                   border: "1px solid rgba(255, 255, 255, 0.15)",
                   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.12), inset 0 1px 1px rgba(255,255,255,0.2)",
                   display: "flex",
@@ -607,7 +627,7 @@ export default function Hero() {
                         width: "30px",
                         height: "30px",
                         borderRadius: "50%",
-                        background: "radial-gradient(circle at top left, #27272a 0%, #2563eb 100%)",
+                        background: "radial-gradient(circle at top left, #27272a 0%, #09090b 100%)",
                         border: "1px solid rgba(255, 255, 255, 0.15)",
                         boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
                         display: "flex",
@@ -628,7 +648,7 @@ export default function Hero() {
                       style={{
                         maxWidth: "82%",
                         padding: "11px 16px",
-                        background: msg.role === "user" ? "#2563eb" : "#ffffff",
+                        background: msg.role === "user" ? "#09090b" : "#ffffff",
                         borderRadius: msg.role === "user" ? "18px 18px 4px 18px" : "18px 18px 18px 4px",
                         fontSize: "0.85rem",
                         color: msg.role === "user" ? "#ffffff" : "var(--text-dark)",
@@ -659,7 +679,7 @@ export default function Hero() {
                       width: "30px",
                       height: "30px",
                       borderRadius: "50%",
-                      background: "radial-gradient(circle at top left, #27272a 0%, #2563eb 100%)",
+                      background: "radial-gradient(circle at top left, #27272a 0%, #09090b 100%)",
                       border: "1px solid rgba(255, 255, 255, 0.15)",
                       boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
                       display: "flex",
@@ -742,7 +762,7 @@ export default function Hero() {
                 }}
               >
                 {/* Brain/Spark/Microphone Icon (decorative & glowing AI theme) */}
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke={isInputFocused || input ? "#2563eb" : "#bbb"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, transition: "stroke 0.2s" }}>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke={isInputFocused || input ? "#09090b" : "#bbb"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, transition: "stroke 0.2s" }}>
                   <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
                   <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
                   <line x1="12" x2="12" y1="19" y2="22"/>
@@ -777,7 +797,7 @@ export default function Hero() {
                     height: "34px",
                     borderRadius: "50%",
                     border: "none",
-                    background: input.trim() && !isThinking ? "#2563eb" : "#f4f4f5",
+                    background: input.trim() && !isThinking ? "#09090b" : "#f4f4f5",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -837,7 +857,7 @@ export default function Hero() {
               justifyContent: "center",
               flexShrink: 0
             }}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#09090b" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-1.5" />
                 <path d="M16 2v4" />
                 <path d="M8 2v4" />
@@ -879,7 +899,7 @@ export default function Hero() {
               justifyContent: "center",
               flexShrink: 0
             }}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#09090b" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
                 <polyline points="14 2 14 8 20 8" />
                 <line x1="16" y1="13" x2="8" y2="13" />
@@ -962,7 +982,7 @@ export default function Hero() {
                     width: "56px",
                     height: "56px",
                     borderRadius: "50%",
-                    background: "radial-gradient(circle at top left, #27272a 0%, #2563eb 100%)",
+                    background: "radial-gradient(circle at top left, #27272a 0%, #09090b 100%)",
                     border: "1px solid rgba(255, 255, 255, 0.15)",
                     boxShadow: "0 4px 12px rgba(0, 0, 0, 0.12), inset 0 1px 1px rgba(255,255,255,0.2)",
                     display: "flex",
@@ -1211,7 +1231,7 @@ export default function Hero() {
                           width: "32px",
                           height: "32px",
                           borderRadius: "50%",
-                          background: "radial-gradient(circle at top left, #27272a 0%, #2563eb 100%)",
+                          background: "radial-gradient(circle at top left, #27272a 0%, #09090b 100%)",
                           border: "1px solid rgba(255, 255, 255, 0.15)",
                           boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
                           display: "flex",
@@ -1232,7 +1252,7 @@ export default function Hero() {
                         style={{
                           maxWidth: "80%",
                           padding: "12px 18px",
-                          background: msg.role === "user" ? "#2563eb" : "#ffffff",
+                          background: msg.role === "user" ? "#09090b" : "#ffffff",
                           borderRadius: msg.role === "user" ? "18px 18px 4px 18px" : "18px 18px 18px 4px",
                           fontSize: "0.88rem",
                           color: msg.role === "user" ? "#ffffff" : "var(--text-dark)",
@@ -1263,7 +1283,7 @@ export default function Hero() {
                         width: "32px",
                         height: "32px",
                         borderRadius: "50%",
-                        background: "radial-gradient(circle at top left, #27272a 0%, #2563eb 100%)",
+                        background: "radial-gradient(circle at top left, #27272a 0%, #09090b 100%)",
                         border: "1px solid rgba(255, 255, 255, 0.15)",
                         boxShadow: "0 2px 5px rgba(0,0,0,0.1)",
                         display: "flex",
@@ -1345,7 +1365,7 @@ export default function Hero() {
                       : "0 2px 6px rgba(0,0,0,0.01)"
                   }}
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={isInputFocused || input ? "#2563eb" : "#bbb"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, transition: "stroke 0.2s" }}>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={isInputFocused || input ? "#09090b" : "#bbb"} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, transition: "stroke 0.2s" }}>
                     <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
                     <path d="M19 10v1a7 7 0 0 1-14 0v-1"/>
                     <line x1="12" x2="12" y1="19" y2="22"/>
@@ -1380,7 +1400,7 @@ export default function Hero() {
                       height: "36px",
                       borderRadius: "50%",
                       border: "none",
-                      background: input.trim() && !isThinking ? "#2563eb" : "#f4f4f5",
+                      background: input.trim() && !isThinking ? "#09090b" : "#f4f4f5",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -1428,7 +1448,7 @@ export default function Hero() {
         .enlarge-btn:hover {
           background: #f4f4f5 !important;
           border-color: rgba(9, 9, 11, 0.15) !important;
-          color: #2563eb !important;
+          color: #09090b !important;
           transform: translateY(-1px);
           box-shadow: 0 4px 10px rgba(0,0,0,0.04) !important;
         }
@@ -1445,7 +1465,7 @@ export default function Hero() {
         .minimize-btn:hover {
           background: #f4f4f5 !important;
           border-color: rgba(9, 9, 11, 0.15) !important;
-          color: #2563eb !important;
+          color: #09090b !important;
           transform: translateY(-1px);
           box-shadow: 0 4px 10px rgba(0,0,0,0.04) !important;
         }
@@ -1498,7 +1518,7 @@ export default function Hero() {
         }
         .chat-suggestion-btn:hover:not(:disabled) .suggestion-arrow {
           transform: translateX(3px);
-          color: #2563eb !important;
+          color: #09090b !important;
         }
         .suggestion-arrow {
           color: #a1a1aa;
@@ -1510,8 +1530,8 @@ export default function Hero() {
 
         .chat-send-btn:hover:not(:disabled) {
           transform: scale(1.05);
-          background: #1d4ed8 !important;
-          box-shadow: 0 4px 10px rgba(37,99,235,0.25);
+          background: #000000 !important;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         }
         .chat-send-btn:active:not(:disabled) {
           transform: scale(0.95);

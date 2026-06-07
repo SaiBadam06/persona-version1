@@ -7,9 +7,9 @@ export default function RealVoiceSection() {
     <section id="real-not-synthetic" className="section-padding" style={{ background: "var(--bg-light)" }}>
       <div className="container" style={{ display: "flex", justifyContent: "center" }}>
         
-        <div
-          style={{
-            background: "linear-gradient(135deg, #0a1024 0%, #14246b 100%)",
+        <div 
+          style={{ 
+            background: "#111111", 
             borderRadius: "24px",
             padding: "60px",
             maxWidth: "900px",
