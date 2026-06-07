@@ -57,20 +57,22 @@ export default function MarketplacePage({ setPage }) {
         </div>
         <div className="grid-3">
           {results.map((r) => (
-            <div key={r.name} className="card">
+            <div key={r.name} className="card market-card">
               <div className="avatar large">
                 {r.name
                   .split(" ")
                   .map((n) => n[0])
                   .join("")}
               </div>
-              <strong>{r.name}</strong>
-              <span className="lr-meta">{r.role}</span>
-              <p>{r.topic}</p>
-              <span className="ui-badge ui-badge--green">Verified</span>
-              <button className="section-action" onClick={() => setPage("Public Persona Page")}>
-                <MessageSquare size={15} /> Chat
-              </button>
+              <span className="mc-name">{r.name}</span>
+              <span className="mc-role">{r.role}</span>
+              <p className="mc-topic">{r.topic}</p>
+              <div className="mc-foot">
+                <span className="ui-badge ui-badge--green">Verified</span>
+                <button className="meeting-join" onClick={() => setPage("Public Persona Page")}>
+                  <MessageSquare size={14} /> Chat
+                </button>
+              </div>
             </div>
           ))}
         </div>
