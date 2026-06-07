@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:3000/)",
+      "Bash(curl -s http://127.0.0.1:3000/)",
+      "Bash(grep -oE \"Persona[^<]{0,30}\")",
+      "Bash(where chromium-cli *)",
+      "Bash(where chrome *)",
+      "Bash(where msedge *)",
+      "Read(//c/Program Files/Google/Chrome/Application/**)",
+      "Read(//c/Program Files \\(x86\\)/Microsoft/Edge/Application/**)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,1800 --virtual-time-budget=5500 --screenshot=\"C:/Users/badam/Downloads/personaOn/.preview-landing2.png\" \"http://127.0.0.1:3000/\")",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --window-size=1440,7800 --virtual-time-budget=8000 --screenshot=\"C:/Users/badam/Downloads/personaOn/.preview-full2.png\" \"http://127.0.0.1:3000/\")",
+      "Read(//c/Users/badam/AppData/Local/Temp/shotter/**)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/home\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\declutter-home.png\" viewport 2 1300)",
+      "Read(//c/Users/badam/AppData/Local/Temp/**)",
+      "Bash(grep -nE '\\\\.hero-copy\\( h2\\)?\\\\s*[,{]' app/globals.css)",
+      "Bash(grep -nA6 '\\\\.hero-copy \\\\{' app/globals.css)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/home\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\declutter2.png\" viewport 2 1300)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\d-landing.png\" viewport 1 1000)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/meetings\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\d-meetings.png\" viewport 1 1000)",
+      "Bash(node shot.js \"https://personaon.com\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\ref-personaon.png\" full 1 1000)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/home\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\redesign-home.png\" viewport 2 1300)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/home\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\home-v3.png\" viewport 2 1300)",
+      "Bash(node shot.js \"https://personaonlanding.vercel.app/\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\ref-landing2.png\" full 1 1000)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/home\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\fresh-full.png\" full 1 1000)",
+      "Bash(node shot.js \"http://127.0.0.1:3000/home\" \"C:\\\\Users\\\\badam\\\\AppData\\\\Local\\\\Temp\\\\top-zoom.png\" viewport 2 760)",
+      "Bash(grep -iE '\\\\.\\(log|png|tmp|bak\\)$|^_|shot|test')",
+      "Bash(rm -f .dev.log .dev-server.log .shot-dashboard.png *.bak)"
+    ]
+  }
+}
