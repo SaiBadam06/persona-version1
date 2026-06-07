@@ -1,7 +1,7 @@
 import {
   Activity,
   ArrowUpRight,
-  Calendar,
+  Globe2,
   HelpCircle,
   LayoutDashboard,
   MessageCircle,
@@ -12,14 +12,15 @@ import {
   Star,
   Upload,
   Users,
+  Video,
   Workflow
 } from "lucide-react";
 
 export const nav = [
   ["Home", LayoutDashboard],
   ["Persona", Sparkles],
-  ["Meetings", Calendar],
-  ["Publish", ArrowUpRight],
+  ["Meetings", Video],
+  ["Publish", Globe2],
   ["Automations", Workflow],
   ["Insights", Activity],
   ["Settings", Settings]
