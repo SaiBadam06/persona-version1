@@ -1260,8 +1260,9 @@ input:focus-visible {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  min-height: 36px;
-  padding: 0 10px;
+  min-height: 32px;
+  padding: 0 11px;
+  font-size: 12.5px;
 }
 
 .data-table {
@@ -1415,12 +1416,12 @@ input:focus-visible {
 }
 
 .live-cards div {
-  padding: 11px 13px;
+  padding: 13px 15px;
   border-radius: 13px;
   color: #081225;
   background: rgba(255, 255, 255, 0.72);
-  font-size: 13.5px;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .button-row {
