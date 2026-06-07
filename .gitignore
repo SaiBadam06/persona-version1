@@ -26,3 +26,6 @@ npm-debug.log*
 
 # os / tooling scratch
 .preview-*.png
+
+# claude code local config
+.claude/
