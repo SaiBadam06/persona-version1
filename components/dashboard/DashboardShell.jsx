@@ -39,6 +39,18 @@ export default function DashboardShell({ children }) {
         </div>
 
         {children}
+
+        <footer className="app-footer">
+          <span className="app-footer-brand">PersonaOn</span>
+          <span className="app-footer-sep">·</span>
+          <span>Work memory for meetings</span>
+          <nav className="app-footer-links">
+            <Link href={hrefFor("Help & Legal")}>Help</Link>
+            <Link href={hrefFor("Settings")}>Settings</Link>
+            <Link href="/">Landing</Link>
+          </nav>
+          <span className="app-footer-meta">© 2026 PersonaOn</span>
+        </footer>
       </section>
 
       <nav className="mobile-tabs">
