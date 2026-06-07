@@ -1,24 +1,14 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense } from "react";
 import PersonaPage from "@/components/dashboard/pages/PersonaPage";
 import { useDashboard } from "@/components/dashboard/DashboardContext";
 
 export default function Page() {
-  const { navigate, openModal, showToast } = useDashboard();
-  const [tab, setTab] = useState(null);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    setTab(params.get("tab"));
-  }, []);
-
+  const { openModal, showToast } = useDashboard();
   return (
-    <PersonaPage
-      setPage={navigate}
-      setModal={openModal}
-      showToast={showToast}
-      buildTabOverride={tab}
-    />
+    <Suspense fallback={null}>
+      <PersonaPage setModal={openModal} showToast={showToast} />
+    </Suspense>
   );
 }

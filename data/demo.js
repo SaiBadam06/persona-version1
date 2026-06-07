@@ -1,14 +1,19 @@
 import {
   Activity,
+  Brain,
   Globe2,
   HelpCircle,
   LayoutDashboard,
+  MessageCircle,
+  Mic,
   PanelRight,
   Settings,
+  Share2,
   Shield,
-  Sparkles,
+  User,
   Users,
   Video,
+  Wand2,
   Workflow
 } from "lucide-react";
 
@@ -31,15 +36,58 @@ export const demoSteps = [
   },
   {
     page: "Persona",
-    section: "Persona",
-    icon: Sparkles,
-    title: "Persona, where you train your twin",
-    body: "Feed your twin what it needs to sound like you. Add knowledge, fill gaps in the Studio, test answers in Chat, and clone your Voice.",
+    section: "Persona, Knowledge",
+    buildTab: "Knowledge",
+    icon: Brain,
+    title: "Persona, Knowledge sources",
+    body: "Connect what your twin learns from: LinkedIn, your website, documents, and more. Each source shows its health and citation coverage.",
     features: [
-      "Knowledge: connect sources and documents",
-      "Studio: answer prompts to fill gaps",
-      "Chat: test cited answers live",
-      "Voice: record an optional voice clone"
+      "Add LinkedIn, files, URLs, and RSS",
+      "Per-source health and score",
+      "Citation coverage",
+      "Extracted topics preview"
+    ]
+  },
+  {
+    page: "Persona",
+    section: "Persona, Studio",
+    buildTab: "Studio",
+    icon: Wand2,
+    title: "Persona, Studio",
+    body: "Answer interview-style prompts to fill the gaps in your twin's knowledge and raise its quality score.",
+    features: [
+      "Interview prompt queue",
+      "Saved answer library",
+      "Gaps ranked by impact",
+      "Live quality score"
+    ]
+  },
+  {
+    page: "Persona",
+    section: "Persona, Chat",
+    buildTab: "Chat",
+    icon: MessageCircle,
+    title: "Persona, Chat testing",
+    body: "Ask your twin anything and see cited answers, exactly as a visitor would. Catch weak answers before they go public.",
+    features: [
+      "Natural-language questions",
+      "Cited, sourced answers",
+      "Queued visitor questions",
+      "Voice and text input"
+    ]
+  },
+  {
+    page: "Persona",
+    section: "Persona, Voice",
+    buildTab: "Voice",
+    icon: Mic,
+    title: "Persona, Voice clone",
+    body: "Optionally record a short sample so your twin can speak answers aloud in your own voice.",
+    features: [
+      "90-second sample",
+      "Consent controls",
+      "Voice preview",
+      "TTS for public chat"
     ]
   },
   {
@@ -57,15 +105,30 @@ export const demoSteps = [
   },
   {
     page: "Publish",
-    section: "Publish",
-    icon: Globe2,
-    title: "Publish, your profile and distribution",
-    body: "Set up your public profile and decide where it appears. The Profile tab edits your details; Distribution controls links, embeds, and sharing.",
+    section: "Publish, Profile",
+    buildTab: "Profile",
+    icon: User,
+    title: "Publish, Profile",
+    body: "Edit the details visitors see: name, headline, role, and bio. The completeness checklist shows what is left to do.",
     features: [
-      "Profile: name, headline, role, and bio",
-      "Distribution: public page and widget",
-      "Share links, QR, and visibility toggles",
-      "Completeness checklist"
+      "Name, headline, role, and bio",
+      "Social links",
+      "Completeness checklist",
+      "Save as draft"
+    ]
+  },
+  {
+    page: "Publish",
+    section: "Publish, Distribution",
+    buildTab: "Distribution",
+    icon: Share2,
+    title: "Publish, Distribution",
+    body: "Control where your twin appears: the public page, the website widget, and share links with visibility toggles.",
+    features: [
+      "Public page visibility",
+      "Website widget setup",
+      "Share studio: QR, social, email",
+      "Booking button"
     ]
   },
   {

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Copy, KeyRound, Link2, Share2 } from "lucide-react";
 import { ActionList, FormGrid, Panel, RotatingPreview, ToggleList } from "@/components/ui/widgets";
@@ -9,7 +10,13 @@ import { persona } from "@/data/persona";
 const TABS = ["Profile", "Distribution"];
 
 export default function PublishPage({ setModal, showToast }) {
+  const searchParams = useSearchParams();
+  const urlTab = searchParams.get("tab");
   const [tab, setTab] = useState("Profile");
+  // The tour and deep-links drive the active tab via ?tab=
+  useEffect(() => {
+    if (urlTab && TABS.includes(urlTab)) setTab(urlTab);
+  }, [urlTab]);
 
   return (
     <>

@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Mic, Play, Plus, Send } from "lucide-react";
 import { ActionList, ChatTranscript, FactCloud, StatList, VoiceWave } from "@/components/ui/widgets";
@@ -11,12 +12,14 @@ const SOURCE_TYPES = ["LinkedIn", "Resume", "Website", "Files", "URL", "YouTube"
 const STATUS_TONE = { Live: "green", Processing: "amber", Failed: "red" };
 const ease = [0.22, 1, 0.36, 1];
 
-export default function PersonaPage({ setPage, setModal, showToast, buildTabOverride }) {
-  const [internalTab, setInternalTab] = useState("Knowledge");
-  // Profile moved to the Publish section; ignore a stale ?tab=Profile deep-link.
-  const requested = buildTabOverride && buildTabOverride !== "Profile" ? buildTabOverride : null;
-  const tab = requested || internalTab;
-  const setTab = requested ? () => {} : setInternalTab;
+export default function PersonaPage({ setModal, showToast }) {
+  const searchParams = useSearchParams();
+  const urlTab = searchParams.get("tab");
+  const [tab, setTab] = useState("Knowledge");
+  // The tour and deep-links drive the active tab via ?tab=
+  useEffect(() => {
+    if (urlTab && personaTabs.includes(urlTab)) setTab(urlTab);
+  }, [urlTab]);
 
   return (
     <div className="page">
