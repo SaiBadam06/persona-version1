@@ -45,7 +45,7 @@ export default function Navbar() {
         }}
       >
         <span style={{ color: "#a0a0a0" }}>PersonaOn is now free.</span>{" "}
-        <a href="#" style={{ color: "#ffffff", fontWeight: 600, textDecoration: "none" }}>
+        <a href="/home" style={{ color: "#ffffff", fontWeight: 600, textDecoration: "none" }}>
           Create yours &rsaquo;
         </a>
       </div>
@@ -68,7 +68,7 @@ export default function Navbar() {
           padding: scrolled ? "16px 0" : "20px 0",
         }}
       >
-        <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <div className="container" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", maxWidth: "1280px", gap: "24px" }}>
           {/* Logo */}
           <a href="/" style={{ display: "flex", alignItems: "center", gap: "10px", color: "var(--text-dark)" }}>
             <Logo width={180} />
@@ -78,7 +78,9 @@ export default function Navbar() {
           <nav
             style={{
               alignItems: "center",
-              gap: "32px",
+              gap: "34px",
+              flex: 1,
+              justifyContent: "center",
             }}
             className="desktop-only"
           >
@@ -105,7 +107,28 @@ export default function Navbar() {
           {/* CTA Links (Hidden on mobile) */}
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }} className="desktop-only">
             <a
-              href="#"
+              href="/home?tour=1"
+              style={{
+                padding: "8px 16px",
+                borderRadius: "12px",
+                border: "1px solid rgba(9, 9, 11, 0.08)",
+                background: "transparent",
+                color: "#09090b",
+                fontSize: "0.85rem",
+                fontWeight: 700,
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px"
+              }}
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" style={{ flexShrink: 0 }}>
+                <polygon points="6 4 20 12 6 20 6 4" />
+              </svg>
+              Take the tour
+            </a>
+            <a
+              href="/home"
               style={{
                 padding: "8px 20px",
                 borderRadius: "12px",
@@ -138,7 +161,7 @@ export default function Navbar() {
               Log In
             </a>
             <a 
-              href="#" 
+              href="/home" 
               style={{ 
                 padding: "8px 20px", 
                 borderRadius: "12px", 
@@ -261,7 +284,7 @@ export default function Navbar() {
             <hr style={{ border: 0, borderTop: "1px solid var(--border-light)" }} />
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               <a
-                href="#"
+                href="/home"
                 onClick={() => setMenuOpen(false)}
                 style={{
                   display: "flex",
@@ -288,7 +311,7 @@ export default function Navbar() {
                 Log In
               </a>
               <a 
-                href="#" 
+                href="/home" 
                 onClick={() => setMenuOpen(false)} 
                 style={{ 
                   display: "flex",

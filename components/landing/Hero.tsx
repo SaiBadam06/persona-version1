@@ -303,7 +303,11 @@ export default function Hero() {
             Meetings are where work happens, but important context gets lost after calls. We capture, organize, and remember the details so you don't have to.
           </p>
           <div className="hero-buttons" style={{ display: "flex", gap: "16px", justifyContent: "center", alignItems: "center", flexWrap: "wrap" }}>
-            <button className="btn-black" style={{ padding: "14px 28px", borderRadius: "30px", fontSize: "1rem", fontWeight: 600 }}>
+            <button
+              className="btn-black"
+              style={{ padding: "14px 28px", borderRadius: "30px", fontSize: "1rem", fontWeight: 600, cursor: "pointer" }}
+              onClick={() => { window.location.href = "/home"; }}
+            >
               Get Started
             </button>
             <button 
